@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {GoFish} from './GameManager/GoFish'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  game = new GoFish(); //TODO inject this
+
+  constructor() {
+    
+  }
 }
